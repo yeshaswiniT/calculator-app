@@ -5,7 +5,7 @@ const buttons =[
 {label:'7', type: 'number'},
 {label:'8', type: 'number'},
 {label:'9', type: 'number'},
-{label:'c', type: 'action'},
+{label:'cl', type: 'action'},
 {label:'4', type: 'number'},
 {label:'5', type: 'number'},
 {label:'6', type: 'number'},

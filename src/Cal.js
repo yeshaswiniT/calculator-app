@@ -24,7 +24,7 @@ const Cal = () => {
       }
     } else if (label === 'R') {
       setDisplay('');
-    } else if (label === 'C') {
+    } else if (label === 'Cl') {
       setDisplay(display.slice(0, -1)); // Remove the last character from the display
     } else {
       setDisplay(display + label); // Append the label to the current display
