@@ -1,15 +1,18 @@
 
 import React from 'react';
-import Cal from './Cal';
-import buttons from './Button';
+import Cal from './Component/Cal';
+// import Button from './Component/Button';
+
 import './App.css';
+import './index.css';
 
 function App() {
   return (
     <div className="App">
      
       <Cal />
-      <buttons />
+      {/* <Button />
+      */}
     </div>
   );
 }

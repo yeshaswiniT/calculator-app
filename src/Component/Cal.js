@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import buttons from './Button';
+import buttonData from './Button'; // import the renamed button data
 
 const Button = ({ label, onClick, type }) => {
   return (
@@ -12,6 +11,7 @@ const Button = ({ label, onClick, type }) => {
     </button>
   );
 };
+
 const Cal = () => {
   const [display, setDisplay] = useState('');
 
@@ -24,27 +24,27 @@ const Cal = () => {
       }
     } else if (label === 'R') {
       setDisplay('');
-    } else if (label === 'Cl') {
+    } else if (label === 'cl') {
       setDisplay(display.slice(0, -1)); // Remove the last character from the display
     } else {
       setDisplay(display + label); // Append the label to the current display
     }
   };
 
-    return (
-      <div id="calculator">
-        <input id="display" value={display} readOnly />
-        <div id="keys">
-          {buttons.map((button, index) => (
-            <Button 
-               key={index} 
-              label={button.label} 
-              onClick={handleClick} 
-              type={button.type} 
-            />
-          ))}
-        </div>
+  return (
+    <div id="calculator">
+      <input id="display" value={display} readOnly />
+      <div id="keys">
+        {buttonData.map((button, index) => (
+          <Button 
+            key={index} 
+            label={button.label} 
+            onClick={handleClick} 
+            type={button.type} 
+          />
+        ))}
       </div>
+    </div>
   );
 };
 
