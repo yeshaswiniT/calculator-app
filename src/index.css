@@ -13,7 +13,6 @@ code {
 } */
 
 
-
 body {
     margin: 0;
     display: flex;
@@ -26,7 +25,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: hsl(0, 3%, 15%);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 10%;
     padding: 15px;
     overflow: hidden;
@@ -88,11 +87,7 @@ body {
   
   /* Media Queries for Responsiveness */
 
-  #keys {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(4, 1fr); /* Adjust the number of buttons per row */
-  }
+  
   
   /* Medium screens */
   @media (max-width: 768px) {
@@ -139,47 +134,58 @@ body {
       font-size: 1.5rem;
       height: 70px;
       width: 70px;
+      margin: 0; 
     }
   
     .reset-btn {
       font-size: 1rem;
       width: 70px;
     }
-  
     #keys {
-      gap: 5px;
+      gap: 2px;
       grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+      padding: 0; /* Remove any padding */
     }
   }
+    
   
   /* Very small screens */
-  @media (max-width: 390px) {
-    #calculator {
-      max-width: 100%;
-      padding: 10px;
-      border-radius: 0;
-    }
-  
-    #display {
-      font-size: 1.5rem;
-      padding: 10px;
-      text-align: left;
-    }
-  
-    button {
-      font-size: 1.2rem;
-      width: 60px;
-      height: 60px;
-    }
-  
-    .reset-btn {
-      font-size: 1rem;
-      width: 80px;
-    }
-  
-    #keys {
-      gap: 4px;
-      grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
-    }
+ /* Very small screens (max-width: 390px) */
+@media (max-width: 390px) {
+  #calculator {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 0;
   }
-  
+
+  #display {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: left;
+  }
+
+  button {
+    font-size: 1.2rem;
+    width: 60px;
+    height: 60px;
+    margin: 0; /* Ensure there's no margin between buttons */
+  }
+
+  .reset-btn {
+    font-size: 1rem;
+    width: 80px;
+  }
+
+  #keys {
+    display: grid; /* Ensure grid layout */
+    gap: 0; /* Remove any gap between buttons */
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+    margin: 0; /* Reset margin if any */
+    padding: 0; /* Reset padding if any */
+  }
+
+  /* Optional: Remove padding or margins on buttons (to ensure alignment) */
+  button {
+    padding: 0; /* Ensure no padding within buttons */
+  }
+}
