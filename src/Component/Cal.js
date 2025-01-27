@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import buttonData from './Button'; // import the renamed button data
+import './index.css';
 
 const Button = ({ label, onClick, type }) => {
   return (
