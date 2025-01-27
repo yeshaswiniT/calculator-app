@@ -181,7 +181,7 @@ body {
 
 @media (max-width: 390px) {
   #calculator {
-    max-width: 80%;
+    max-width: 90%;
     padding: 10px;
     border-radius: 0;
   }
