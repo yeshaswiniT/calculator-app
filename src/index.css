@@ -151,7 +151,7 @@ body {
   
   /* Very small screens */
  /* Very small screens (max-width: 390px) */
-@media (max-width: 390px) {
+ @media (max-width: 390px) {
   #calculator {
     max-width: 100%;
     padding: 10px;
@@ -179,7 +179,7 @@ body {
   #keys {
     display: grid; /* Ensure grid layout */
     gap: 0; /* Remove any gap between buttons */
-    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+    grid-template-columns: repeat(3, 1fr); /* 2 buttons per row */
     margin: 0; /* Reset margin if any */
     padding: 0; /* Reset padding if any */
   }
