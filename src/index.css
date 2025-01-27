@@ -151,7 +151,65 @@ body {
   
   /* Very small screens */
  /* Very small screens (max-width: 390px) */
- @media (max-width: 390px) {
+ @media (max-width: 768px) {
+  #calculator {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  #display {
+    font-size: 3rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 2rem;
+    width: 22vw;
+    height: 22vw;
+  }
+
+  .reset-btn {
+    width: 22vw;
+    height: 12vw;
+    font-size: 1.8rem;
+  }
+
+  #keys {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  #calculator {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  #display {
+    font-size: 2rem;
+    padding: 10px 15px;
+  }
+
+  button {
+    font-size: 1.5rem;
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .reset-btn {
+    width: 25vw;
+    height: 15vw;
+    font-size: 1.6rem;
+  }
+
+  #keys {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 390px) {
   #calculator {
     max-width: 100%;
     padding: 10px;
@@ -161,31 +219,23 @@ body {
   #display {
     font-size: 1.5rem;
     padding: 10px;
-    text-align: left;
   }
 
   button {
     font-size: 1.2rem;
-    width: 60px;
-    height: 60px;
-    margin: 0; /* Ensure there's no margin between buttons */
+    width: 30vw;
+    height: 40vw;
   }
 
   .reset-btn {
-    font-size: 1rem;
-    width: 80px;
+    width: 35vw;
+    height: 18vw;
+    font-size: 1.4rem;
   }
 
   #keys {
-    display: grid; /* Ensure grid layout */
-    gap: 0; /* Remove any gap between buttons */
-    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
-    margin: 0; /* Reset margin if any */
-    padding: 0; /* Reset padding if any */
-  }
-
-  /* Optional: Remove padding or margins on buttons (to ensure alignment) */
-  button {
-    padding: 0; /* Ensure no padding within buttons */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    padding: 0;
   }
 }
