@@ -14,8 +14,6 @@ code {
 
 
 
-
-
 body {
     margin: 0;
     display: flex;
@@ -89,6 +87,12 @@ body {
   }
   
   /* Media Queries for Responsiveness */
+
+  #keys {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of buttons per row */
+  }
   
   /* Medium screens */
   @media (max-width: 768px) {
@@ -123,7 +127,7 @@ body {
   /* Small screens */
   @media (max-width: 680px) {
     #calculator {
-      max-width: 500px;
+      max-width: 100%;
     }
   
     #display {
@@ -144,12 +148,7 @@ body {
   
     #keys {
       gap: 5px;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    #reset-btn {
-      font-size: 1rem;
-      gap: 8px;
+      grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
     }
   }
   
@@ -158,7 +157,7 @@ body {
     #calculator {
       max-width: 100%;
       padding: 10px;
-      border-radius: 0px;
+      border-radius: 0;
     }
   
     #display {
@@ -169,8 +168,8 @@ body {
   
     button {
       font-size: 1.2rem;
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
     }
   
     .reset-btn {
@@ -180,11 +179,7 @@ body {
   
     #keys {
       gap: 4px;
-      grid-template-columns: repeat(2, 1fr); /* 2 buttons per row on small screens */
-    }
-  
-    #reset-btn {
-      gap: 8px;
+      grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
     }
   }
   
