@@ -87,37 +87,8 @@ body {
   
   /* Media Queries for Responsiveness */
 
-  
-  
-  /* Medium screens */
-  @media (max-width: 768px) {
-    #calculator {
-      max-width: 500px;
-    }
-  
-    #display {
-      font-size: 3rem;
-      padding: 10px 10px;
-    }
-  
-    button {
-      font-size: 2rem;
-      height: 80px;
-      width: 80px;
-    }
-  
-    .reset-btn {
-      font-size: 1.2rem;
-    }
-  
-    #keys {
-      grid-template-columns: repeat(3, 1fr); /* 3 buttons per row on medium screens */
-    }
-  
-    #reset-btn {
-      font-size: 1.2rem;
-    }
-  }
+
+ 
   
   /* Small screens */
   @media (max-width: 680px) {
@@ -149,8 +120,7 @@ body {
   }
     
   
-  /* Very small screens */
- /* Very small screens (max-width: 390px) */
+  
  @media (max-width: 768px) {
   #calculator {
     max-width: 100%;
@@ -187,13 +157,13 @@ body {
 
   #display {
     font-size: 2rem;
-    padding:0, 15px 15px;
+    padding:10px 8px;
   }
 
   button {
     font-size: 1.5rem;
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 20vw;
   }
 
   .reset-btn {
@@ -204,7 +174,7 @@ body {
 
   #keys {
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 3px;
     padding: 0;
   }
 }
@@ -218,17 +188,17 @@ body {
 
   #display {
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 15px;
   }
 
   button {
     font-size: 1.2rem;
     width: 30vw;
-    height: 40vw;
+    height: 20vw;
   }
 
   .reset-btn {
-    width: 35vw;
+    width: 25vw;
     height: 18vw;
     font-size: 1.4rem;
   }
